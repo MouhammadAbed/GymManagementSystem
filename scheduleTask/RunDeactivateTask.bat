@@ -1,0 +1,1 @@
+sqlcmd -S . -d h_fitness -U sa -P sa123456 -i "C:\Tasks\DeactivateExpiredMembers.sql"
