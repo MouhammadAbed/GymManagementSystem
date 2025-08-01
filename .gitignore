@@ -1,0 +1,14 @@
+# Ignore build files and settings
+bin/
+obj/
+.vs/
+packages/
+*.user
+*.suo
+
+# Ignore compiled outputs
+*.exe
+*.dll
+*.pdb
+*.log
+*.cache

@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D12D9E0A-1EC8-42F2-8A2E-C7DB3E308B03}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Fitness_project</RootNamespace>
+    <AssemblyName>Fitness_project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="customDesignControl">
+      <HintPath>..\customDesignControl\bin\Debug\customDesignControl.dll</HintPath>
+    </Reference>
+    <Reference Include="CustomMessageBox">
+      <HintPath>..\customMessageBox\CustomMessageBox-main\CustomMessageBox\bin\Debug\CustomMessageBox.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\MaterialSkin.2.2.3.1\lib\net461\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TabControl">
+      <HintPath>..\customize_Tab_Control\TabControl-master\TabControl\bin\Debug\TabControl.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audit\ctrAuditScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Audit\ctrAuditScreen.Designer.cs">
+      <DependentUpon>ctrAuditScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categories\controls\ctrAddUpdateCategories.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Categories\controls\ctrAddUpdateCategories.Designer.cs">
+      <DependentUpon>ctrAddUpdateCategories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categories\controls\ctrCategoriesList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Categories\controls\ctrCategoriesList.Designer.cs">
+      <DependentUpon>ctrCategoriesList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categories\controls\ctrCategoryInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Categories\controls\ctrCategoryInfo.Designer.cs">
+      <DependentUpon>ctrCategoryInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categories\controls\ctrFindCategory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Categories\controls\ctrFindCategory.Designer.cs">
+      <DependentUpon>ctrFindCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categories\controls\ctrShowCategoryInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Categories\controls\ctrShowCategoryInfo.Designer.cs">
+      <DependentUpon>ctrShowCategoryInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ctrSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctrSettings.Designer.cs">
+      <DependentUpon>ctrSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalClasses\UtilityCustomControls\DynamicTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GlobalClasses\UtilityCustomControls\DynamicTabControl.Designer.cs">
+      <DependentUpon>DynamicTabControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalClasses\UtilityCustomControls\DynamicTabSelector.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GlobalClasses\UtilityCustomControls\DynamicTabSelector.Designer.cs">
+      <DependentUpon>DynamicTabSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalClasses\Utility\clsEventLogEntry.cs" />
+    <Compile Include="GlobalClasses\Utility\clsNamePart.cs" />
+    <Compile Include="GlobalClasses\Utility\clsPermissions.cs" />
+    <Compile Include="GlobalClasses\Utility\clsRoundedPanleCorner.cs" />
+    <Compile Include="GlobalClasses\Utility\focus\clsSetButtonFocus.cs" />
+    <Compile Include="GlobalClasses\Utility\focus\clsSetTextBoxFocus.cs" />
+    <Compile Include="Localization\clsSaveLanguageSettings.cs" />
+    <Compile Include="Localization\Strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Members\controls\ctrAddUpdateMember.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Members\controls\ctrAddUpdateMember.Designer.cs">
+      <DependentUpon>ctrAddUpdateMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Members\controls\ctrShowMemberIn fo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Members\controls\ctrShowMemberIn fo.Designer.cs">
+      <DependentUpon>ctrShowMemberIn fo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\ctrAddUpdatePerson.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="People\ctrAddUpdatePerson.Designer.cs">
+      <DependentUpon>ctrAddUpdatePerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalClasses\Utility\clsCustomTabControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GlobalClasses\UtilityCustomControls\ctrProfileTab.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GlobalClasses\UtilityCustomControls\ctrProfileTab.Designer.cs">
+      <DependentUpon>ctrProfileTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalClasses\UtilityCustomControls\CustomTabSelector.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Members\controls\ctrFindMember.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Members\controls\ctrFindMember.Designer.cs">
+      <DependentUpon>ctrFindMember.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\ctrFindPerson.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="People\ctrFindPerson.Designer.cs">
+      <DependentUpon>ctrFindPerson.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\ctrPeopleList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="People\ctrPeopleList.Designer.cs">
+      <DependentUpon>ctrPeopleList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subscription\ctrAddNewSubscription.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Subscription\ctrAddNewSubscription.Designer.cs">
+      <DependentUpon>ctrAddNewSubscription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subscription\ctrFindSubscription.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Subscription\ctrFindSubscription.Designer.cs">
+      <DependentUpon>ctrFindSubscription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subscription\ctrGetAllSubscriptions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Subscription\ctrGetAllSubscriptions.Designer.cs">
+      <DependentUpon>ctrGetAllSubscriptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Subscription\ctrSubscriptionInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Subscription\ctrSubscriptionInfo.Designer.cs">
+      <DependentUpon>ctrSubscriptionInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="test\frmTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="test\frmTest.Designer.cs">
+      <DependentUpon>frmTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trainers\ctrAddUpdateTrainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="trainers\ctrAddUpdateTrainer.Designer.cs">
+      <DependentUpon>ctrAddUpdateTrainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trainers\ctrFindTrainer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="trainers\ctrFindTrainer.Designer.cs">
+      <DependentUpon>ctrFindTrainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trainers\ctrShowTrainerInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="trainers\ctrShowTrainerInfo.Designer.cs">
+      <DependentUpon>ctrShowTrainerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trainers\ctrTrainerInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="trainers\ctrTrainerInfo.Designer.cs">
+      <DependentUpon>ctrTrainerInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="users\controls\ctrAddUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="users\controls\ctrAddUser.Designer.cs">
+      <DependentUpon>ctrAddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="users\controls\ctrFindUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="users\controls\ctrFindUser.Designer.cs">
+      <DependentUpon>ctrFindUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="users\controls\ctrShowUserInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="users\controls\ctrShowUserInfo.Designer.cs">
+      <DependentUpon>ctrShowUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="users\controls\ctrUserInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="users\controls\ctrUserInfo.Designer.cs">
+      <DependentUpon>ctrUserInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard\MainDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard\MainDashboard.Designer.cs">
+      <DependentUpon>MainDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalClasses\Utility\CircularPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="GlobalClasses\Utility\clsGlobalUser.cs" />
+    <Compile Include="GlobalClasses\Utility\clsResizeMoveFom.cs" />
+    <Compile Include="GlobalClasses\Utility\clsUtil.cs" />
+    <Compile Include="GlobalClasses\UtilityCustomControls\CustomDataGridView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GlobalClasses\UtilityCustomControls\CustomDataGridView.Designer.cs">
+      <DependentUpon>CustomDataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login\clstransparentPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="login\loginform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login\loginform.Designer.cs">
+      <DependentUpon>loginform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Members\controls\ctrMemberInfo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Members\controls\ctrMemberInfo.Designer.cs">
+      <DependentUpon>ctrMemberInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Members\controls\ctrMemberList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Members\controls\ctrMemberList.Designer.cs">
+      <DependentUpon>ctrMemberList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="People\ctrPersonInfo2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="People\ctrPersonInfo2.Designer.cs">
+      <DependentUpon>ctrPersonInfo2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="trainers\ctrTrainersList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="trainers\ctrTrainersList.Designer.cs">
+      <DependentUpon>ctrTrainersList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="users\controls\ctrUsersList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="users\controls\ctrUsersList.Designer.cs">
+      <DependentUpon>ctrUsersList.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Audit\ctrAuditScreen.resx">
+      <DependentUpon>ctrAuditScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categories\controls\ctrAddUpdateCategories.resx">
+      <DependentUpon>ctrAddUpdateCategories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categories\controls\ctrCategoriesList.resx">
+      <DependentUpon>ctrCategoriesList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categories\controls\ctrCategoryInfo.resx">
+      <DependentUpon>ctrCategoryInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categories\controls\ctrFindCategory.resx">
+      <DependentUpon>ctrFindCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categories\controls\ctrShowCategoryInfo.resx">
+      <DependentUpon>ctrShowCategoryInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ctrSettings.resx">
+      <DependentUpon>ctrSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\Strings.ar.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\Strings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members\controls\ctrAddUpdateMember.resx">
+      <DependentUpon>ctrAddUpdateMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members\controls\ctrShowMemberIn fo.resx">
+      <DependentUpon>ctrShowMemberIn fo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\ctrAddUpdatePerson.resx">
+      <DependentUpon>ctrAddUpdatePerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalClasses\UtilityCustomControls\ctrProfileTab.resx">
+      <DependentUpon>ctrProfileTab.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members\controls\ctrFindMember.resx">
+      <DependentUpon>ctrFindMember.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members\controls\ctrMemberInfo.resx">
+      <DependentUpon>ctrMemberInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\ctrFindPerson.resx">
+      <DependentUpon>ctrFindPerson.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\ctrPeopleList.resx">
+      <DependentUpon>ctrPeopleList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription\ctrAddNewSubscription.resx">
+      <DependentUpon>ctrAddNewSubscription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription\ctrFindSubscription.resx">
+      <DependentUpon>ctrFindSubscription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription\ctrGetAllSubscriptions.resx">
+      <DependentUpon>ctrGetAllSubscriptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Subscription\ctrSubscriptionInfo.resx">
+      <DependentUpon>ctrSubscriptionInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="test\frmTest.resx">
+      <DependentUpon>frmTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trainers\ctrAddUpdateTrainer.resx">
+      <DependentUpon>ctrAddUpdateTrainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trainers\ctrFindTrainer.resx">
+      <DependentUpon>ctrFindTrainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trainers\ctrShowTrainerInfo.resx">
+      <DependentUpon>ctrShowTrainerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trainers\ctrTrainerInfo.resx">
+      <DependentUpon>ctrTrainerInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users\controls\ctrAddUser.resx">
+      <DependentUpon>ctrAddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users\controls\ctrFindUser.resx">
+      <DependentUpon>ctrFindUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users\controls\ctrShowUserInfo.resx">
+      <DependentUpon>ctrShowUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users\controls\ctrUserInfo.resx">
+      <DependentUpon>ctrUserInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard\MainDashboard.resx">
+      <DependentUpon>MainDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GlobalClasses\UtilityCustomControls\CustomDataGridView.resx">
+      <DependentUpon>CustomDataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login\loginform.resx">
+      <DependentUpon>loginform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Members\controls\ctrMemberList.resx">
+      <DependentUpon>ctrMemberList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="People\ctrPersonInfo2.resx">
+      <DependentUpon>ctrPersonInfo2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="trainers\ctrTrainersList.resx">
+      <DependentUpon>ctrTrainersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users\controls\ctrUsersList.resx">
+      <DependentUpon>ctrUsersList.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FitnessBusinessLayer\FitnessBusinessLayer.csproj">
+      <Project>{cf872a19-354d-423d-8326-a30e82a6dcbe}</Project>
+      <Name>FitnessBusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FitnessDataLayer\FitnessDataLayer.csproj">
+      <Project>{37EFD7B4-A2A0-4659-9F66-3AC10C41AB77}</Project>
+      <Name>FitnessDataLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\woman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find user 351.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H-Fitness Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H-Fitness  Logo2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H-Fitness  Logo3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H-Fitness  Logo4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\H-Fitness  Logo5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\verticalcloudimage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vecteezy_ai-generated-body-builder-man-on-transparent-background-png_34925439.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-email-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym equipment1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym equipment2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gym equipment3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Your logo herer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add 35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-dumbbell-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-update-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-show-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-update-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gymBackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-renew-subscription-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-renew-subscription-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paper-clip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\income.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group-discussion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\liability.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-update-321.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="lblPersonId" xml:space="preserve">
+    <value>رقم الشخص</value>
+  </data>
+  <data name="lblFirstName" xml:space="preserve">
+    <value>الاسم الأول</value>
+  </data>
+  <data name="lblSecondName" xml:space="preserve">
+    <value>الاسم الثاني</value>
+  </data>
+  <data name="lblLastName" xml:space="preserve">
+    <value>الاسم الأخير</value>
+  </data>
+  <data name="lblPhoneNumber" xml:space="preserve">
+    <value>رقم الهاتف</value>
+  </data>
+  <data name="lblGender" xml:space="preserve">
+    <value>الجنس</value>
+  </data>
+  <data name="lblFind" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+  <data name="lblNoData" xml:space="preserve">
+    <value>لا توجد بيانات</value>
+  </data>
+  <data name="lblStatus" xml:space="preserve">
+    <value>الحالة</value>
+  </data>
+  <data name="lblSortBy" xml:space="preserve">
+    <value>ترتيب حسب</value>
+  </data>
+  <data name="lblAddNewMember" xml:space="preserve">
+    <value>إضافة عضو جديد</value>
+  </data>
+  <data name="lblAddNewTrainer" xml:space="preserve">
+    <value>إضافة مدرب جديد</value>
+  </data>
+  <data name="lblShowMemberTitle" xml:space="preserve">
+    <value>معلومات العضو</value>
+  </data>
+  <data name="lblTrains" xml:space="preserve">
+    <value>التدريبات</value>
+  </data>
+  <data name="lblShowTrainerInfo" xml:space="preserve">
+    <value>معلومات المدرب</value>
+  </data>
+  <data name="lblShowUserInfo" xml:space="preserve">
+    <value>معلومات المستخدم</value>
+  </data>
+  <data name="lblUsername" xml:space="preserve">
+    <value>اسم المستخدم</value>
+  </data>
+  <data name="btnAdd" xml:space="preserve">
+    <value>إضافة</value>
+  </data>
+  <data name="btnSearch" xml:space="preserve">
+    <value>بحث</value>
+  </data>
+  <data name="btnAddPeson" xml:space="preserve">
+    <value>إضافة شخص</value>
+  </data>
+  <data name="btnSave" xml:space="preserve">
+    <value>حفظ</value>
+  </data>
+  <data name="btnClose" xml:space="preserve">
+    <value>إغلاق</value>
+  </data>
+  <data name="btnNext" xml:space="preserve">
+    <value>التالي</value>
+  </data>
+  <data name="rbFemale" xml:space="preserve">
+    <value>أنثى</value>
+  </data>
+  <data name="rbMale" xml:space="preserve">
+    <value>ذكر</value>
+  </data>
+  <data name="lblPassword" xml:space="preserve">
+    <value>كلمة المرور</value>
+  </data>
+  <data name="lblValidatePassword" xml:space="preserve">
+    <value>تأكيد كلمة المرور</value>
+  </data>
+  <data name="chbfullAccess" xml:space="preserve">
+    <value>منح هذا المستخدم صلاحية الوصول الكاملة</value>
+  </data>
+  <data name="chbUsersTab" xml:space="preserve">
+    <value>الوصول إلى تبويب المستخدمين</value>
+  </data>
+  <data name="chbMembersTab" xml:space="preserve">
+    <value>الوصول إلى تبويب الأعضاء</value>
+  </data>
+  <data name="chbTrainersTab" xml:space="preserve">
+    <value>الوصول إلى تبويب المدرّبين</value>
+  </data>
+  <data name="chbCategoriesTab" xml:space="preserve">
+    <value>الوصول إلى تبويب الفئات</value>
+  </data>
+  <data name="chbSubscriptionsTab" xml:space="preserve">
+    <value>الوصول إلى تبويب الاشتراكات</value>
+  </data>
+  <data name="chbAuditTab" xml:space="preserve">
+    <value>الوصول إلى تبويب السجل</value>
+  </data>
+  <data name="gbPermission" xml:space="preserve">
+    <value>صلاحيات المستخدم</value>
+  </data>
+  <data name="tbPersonInfo" xml:space="preserve">
+    <value>معلومات الشخص</value>
+  </data>
+  <data name="tbUser" xml:space="preserve">
+    <value>معلومات المستخدم</value>
+  </data>
+  <data name="gbFilter" xml:space="preserve">
+    <value>فلتر</value>
+  </data>
+  <data name="FilterById" xml:space="preserve">
+    <value>رقم الشخص</value>
+  </data>
+  <data name="FilterByName" xml:space="preserve">
+    <value>الاسم</value>
+  </data>
+  <data name="InvalidInputMessage" xml:space="preserve">
+    <value>خطأ ما حدث. يرجى إدخال قيمة صحيحة</value>
+  </data>
+  <data name="InvalidInputTitle" xml:space="preserve">
+    <value>نتيجة البحث</value>
+  </data>
+  <data name="InvalidPersonInput" xml:space="preserve">
+    <value>لم يتم العثور على الشخص. يُرجى إدخال قيمة صحيحة.</value>
+  </data>
+  <data name="RequiredField" xml:space="preserve">
+    <value>الرجاء ملأ هذا الحقل</value>
+  </data>
+  <data name="RequiredFields" xml:space="preserve">
+    <value>الرجاء ملأ جميع الحقول</value>
+  </data>
+  <data name="NameExist" xml:space="preserve">
+    <value>هذا الاسم في الاستعمال</value>
+  </data>
+  <data name="lblAddNewUser" xml:space="preserve">
+    <value>إضافة مستخدم جديد</value>
+  </data>
+  <data name="SavePerson" xml:space="preserve">
+    <value>هل أنت متأكد من أنك تريد حفظ هذه المعلومات؟</value>
+  </data>
+  <data name="PersonAddSuc" xml:space="preserve">
+    <value>تم اضافة الشخص بنجاح</value>
+  </data>
+  <data name="rjEditPersonlalbel" xml:space="preserve">
+    <value>تعديل معلومات الشخض</value>
+  </data>
+  <data name="rjRquiredTextBox" xml:space="preserve">
+    <value>يرجى ملء الحقل المطلوب قبل البحث.</value>
+  </data>
+  <data name="rjUserNotFound" xml:space="preserve">
+    <value>مستخدم غير موجود.  أدخل قيمة صحيحة من فضلك.</value>
+  </data>
+  <data name="rjUserExist" xml:space="preserve">
+    <value>يوجد مستخدم بالفعل لمعرف الشخص المحدد.</value>
+  </data>
+  <data name="rjAssingOneAtLeast" xml:space="preserve">
+    <value>يرجى تعيين إذن واحد على الأقل للمستخدم.</value>
+  </data>
+  <data name="rjAskToSaveUser" xml:space="preserve">
+    <value>هل تريد حفظ هذه معلومات؟</value>
+  </data>
+  <data name="rjSaveUser" xml:space="preserve">
+    <value>تم حفظ معلومات بنجاح.</value>
+  </data>
+  <data name="rjConvfimPasswordNotMatch" xml:space="preserve">
+    <value>كلمة المرور التأكيدية لا تتطابق مع كلمة المرور الأصلية.</value>
+  </data>
+  <data name="lblFullName" xml:space="preserve">
+    <value>الاسم الكامل</value>
+  </data>
+  <data name="lblTrainerCategories" xml:space="preserve">
+    <value>تصنيفات المدرب</value>
+  </data>
+  <data name="lblSelectCategory" xml:space="preserve">
+    <value>اختر الفئة</value>
+  </data>
+  <data name="lblSalary" xml:space="preserve">
+    <value>راتب</value>
+  </data>
+  <data name="tbTrainerInfo" xml:space="preserve">
+    <value>معلومات المدرب</value>
+  </data>
+  <data name="rjNotValidTrainer" xml:space="preserve">
+    <value>لم يتم العثور على المدرب. يرجى إدخال قيمة صحيحة.</value>
+  </data>
+  <data name="rjNotValidInput" xml:space="preserve">
+    <value>حدث خطأ ما. يرجى إدخال مدخل صالح.</value>
+  </data>
+  <data name="rjTrainerNotAssignToCategory" xml:space="preserve">
+    <value>لم يتم تعيين المدرب لأي فئة بعد</value>
+  </data>
+  <data name="btnUsers" xml:space="preserve">
+    <value>المستخدمين</value>
+  </data>
+  <data name="buttonFind" xml:space="preserve">
+    <value>ابحث</value>
+  </data>
+  <data name="buttonAdd" xml:space="preserve">
+    <value>إضافة</value>
+  </data>
+  <data name="btnUsersList" xml:space="preserve">
+    <value>قائمة المستخدمين</value>
+  </data>
+  <data name="btnTrainers" xml:space="preserve">
+    <value>المدربون</value>
+  </data>
+  <data name="btnTrainerList" xml:space="preserve">
+    <value>قائمة المدربين</value>
+  </data>
+  <data name="btnMembers" xml:space="preserve">
+    <value>الأعضاء</value>
+  </data>
+  <data name="btnCategories" xml:space="preserve">
+    <value>الفئات</value>
+  </data>
+  <data name="btnMemberList" xml:space="preserve">
+    <value>قائمة الأعضاء</value>
+  </data>
+  <data name="btnCatLIst" xml:space="preserve">
+    <value>قائمة الفئات</value>
+  </data>
+  <data name="btnSubscripton" xml:space="preserve">
+    <value>الاشتراكات</value>
+  </data>
+  <data name="btnActiveSub" xml:space="preserve">
+    <value>قائمة الاشتراكات</value>
+  </data>
+  <data name="btnAudit" xml:space="preserve">
+    <value>التدقيق</value>
+  </data>
+  <data name="btnExist" xml:space="preserve">
+    <value>خروج</value>
+  </data>
+  <data name="lbltotalSub" xml:space="preserve">
+    <value>إجمالي الاشتراكات</value>
+  </data>
+  <data name="lblfees1" xml:space="preserve">
+    <value>إجمالي الرسوم</value>
+  </data>
+  <data name="lblAppCount" xml:space="preserve">
+    <value>إجمالي المتقدمين</value>
+  </data>
+  <data name="lblAuditTitle" xml:space="preserve">
+    <value>شاشة التدقيق</value>
+  </data>
+  <data name="lblMonth" xml:space="preserve">
+    <value>الشهر</value>
+  </data>
+  <data name="lblYear" xml:space="preserve">
+    <value>السنة</value>
+  </data>
+  <data name="LblCategory" xml:space="preserve">
+    <value>الفئة</value>
+  </data>
+  <data name="lblCategoryId" xml:space="preserve">
+    <value>معرف الفئة</value>
+  </data>
+  <data name="lblCategoryName" xml:space="preserve">
+    <value>اسم الفئة</value>
+  </data>
+  <data name="lblDescription" xml:space="preserve">
+    <value>الوصف</value>
+  </data>
+  <data name="lblShowCatTitle" xml:space="preserve">
+    <value>شاشة معلومات الفئة</value>
+  </data>
+  <data name="lblAddCatTitle" xml:space="preserve">
+    <value>إضافة فئة جديدة</value>
+  </data>
+  <data name="lblSearchBy" xml:space="preserve">
+    <value>البحث بواسطة</value>
+  </data>
+  <data name="lblUpdateCatTitle" xml:space="preserve">
+    <value>تحديث شاشة الفئة</value>
+  </data>
+  <data name="messageCatExist" xml:space="preserve">
+    <value>الفئة موجودة بالفعل</value>
+  </data>
+  <data name="lblMemberName" xml:space="preserve">
+    <value>اسم العضو</value>
+  </data>
+  <data name="lblTrainerName" xml:space="preserve">
+    <value>اسم المدرب</value>
+  </data>
+  <data name="lblStartDate" xml:space="preserve">
+    <value>تاريخ البدء</value>
+  </data>
+  <data name="lblEndDate" xml:space="preserve">
+    <value>تاريخ الانتهاء</value>
+  </data>
+  <data name="lblMonthDuration" xml:space="preserve">
+    <value>مدة الاشتراك</value>
+  </data>
+  <data name="lblDiscount" xml:space="preserve">
+    <value>الخصم</value>
+  </data>
+  <data name="lblFees" xml:space="preserve">
+    <value>الرسوم</value>
+  </data>
+  <data name="lblFindSubTitle" xml:space="preserve">
+    <value>شاشة البحث عن الاشتراك</value>
+  </data>
+  <data name="messageInvalidNumeric" xml:space="preserve">
+    <value>يرجى إدخال معرف رقمي صالح.</value>
+  </data>
+  <data name="rjSubNotFound" xml:space="preserve">
+    <value>لم يتم العثور على الاشتراك. يرجى إدخال قيمة صحيحة.</value>
+  </data>
+  <data name="tbSubInfo" xml:space="preserve">
+    <value>معلومات الاشتراك</value>
+  </data>
+  <data name="rjPersonSubToCat" xml:space="preserve">
+    <value>الشخص لديه بالفعل اشتراك فعال في هذه الفئة.</value>
+  </data>
+  <data name="rjSubAdded" xml:space="preserve">
+    <value>تمت إضافة الاشتراك بنجاح.</value>
+  </data>
+  <data name="lblAddNewSub" xml:space="preserve">
+    <value>شاشة إضافة اشتراك</value>
+  </data>
+  <data name="deniedTitle" xml:space="preserve">
+    <value>الوصول مرفوض</value>
+  </data>
+  <data name="rjMessageDenied" xml:space="preserve">
+    <value>ليس لديك صلاحية للوصول إلى تبويب {0}. يرجى التواصل مع المسؤول</value>
+  </data>
+  <data name="TabUsers" xml:space="preserve">
+    <value>المستخدمين</value>
+  </data>
+  <data name="TabMembers" xml:space="preserve">
+    <value>الأعضاء</value>
+  </data>
+  <data name="TabAudit" xml:space="preserve">
+    <value>التدقيق</value>
+  </data>
+  <data name="TabCategory" xml:space="preserve">
+    <value>الفئات</value>
+  </data>
+  <data name="TabSubsc" xml:space="preserve">
+    <value>الاشتراكات</value>
+  </data>
+  <data name="TabTrainers" xml:space="preserve">
+    <value>المدربون</value>
+  </data>
+  <data name="NoSelectedRowTitle" xml:space="preserve">
+    <value>خانة غير محددة</value>
+  </data>
+  <data name="Cancelledtitle" xml:space="preserve">
+    <value>ملغى!</value>
+  </data>
+  <data name="rjSelectRow" xml:space="preserve">
+    <value>يرجى تحديد الخانة</value>
+  </data>
+  <data name="rjSubRenewed" xml:space="preserve">
+    <value>تم تجديد هذه الاشتراك بالفعل.</value>
+  </data>
+  <data name="rjRenewCancelled" xml:space="preserve">
+    <value>تم إلغاء التجديد.</value>
+  </data>
+  <data name="rjRenewDone" xml:space="preserve">
+    <value>تم تجديد الاشتراك لمدة {0}</value>
+  </data>
+</root>
